@@ -4,6 +4,40 @@
 **Started:** February 2026
 **Curriculum:** v1.1
 
+## Week 1, Day 2
+**Date:** February 23, 2026
+**Topic:** List Comprehensions
+
+### Summary
+- Basic list comprehensions: [expression for item in list]
+- Filtered comprehensions: [expression for item in list if condition]
+- Nested comprehensions: [expression for x in list1 for y in list2]
+- Generator expressions inside sum()
+- Comprehensions vs for loops — same result, one line
+
+### Exercises Completed
+1. `exercise_01_basic_comprehensions.py` — Frame timing, even frames, labels
+2. `exercise_02_scene_filtering.py` — C4D scene object filtering
+3. `exercise_03_transform_pipeline.py` — Render path generation
+
+### Quiz
+
+| Q# | Question | My Answer | Correct Answer | Result |
+|----|----------|-----------|----------------|--------|
+| 1 | Filter even numbers | [2, 4, 6] | [2, 4, 6] | ✓ |
+| 2 | Rewrite loop as comprehension | upper([for...]) | [name.upper() for name in list] | ✗ |
+| 3 | scaled[0] value | 0 | 0.333... | ✗ |
+| 4 | Nested comprehension count | 2 | 6 (every combination) | ½ |
+| 5 | Filtered list output | Light | ["Light"] | ✗ |
+
+**Score:** 1.5/5
+
+### Key Corrections
+- Comprehension syntax: [expression for item in list] — expression comes first
+- Trace math instead of guessing: 10/30 = 0.333, not 0
+- Nested comprehension = every combination (2×3=6), not zip pairing
+- Comprehensions always produce lists, even with one result
+
 ---
 
 ## Week 1, Day 1
