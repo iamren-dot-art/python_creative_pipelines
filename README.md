@@ -4,6 +4,43 @@
 **Started:** February 2026
 **Curriculum:** v1.1
 
+## Week 1, Day 3
+**Date:** February 24, 2026
+**Topic:** Dict Comprehensions
+
+### Summary
+- Dict comprehension syntax: {key: value for item in iterable}
+- Filtering with conditions: {k: v for k, v in data if condition}
+- Set comprehension for unique values: {item for item in list}
+- .items() for iterating dict key-value pairs
+- zip() + dict comprehension for building lookups from parallel lists
+- Nested comprehension inside dict comprehension for counting
+
+### Exercises Completed
+1. `exercise_01_basic_dict_comp.py` — Scene object lookups, type counting, filtering
+2. `exercise_02_parameter_maps.py` — Object-to-position mapping, filtering, normalization
+
+### Quiz
+
+| Q# | Question | My Answer | Correct Answer | Result |
+|----|----------|-----------|----------------|--------|
+| 1 | Dict key access via print | sphere: 20 | 20 | ✗ |
+| 2 | Filtered dict | {b: 2, c: 3} | {'b': 2, 'c': 3} | ✓ |
+| 3 | len() dict comprehension | {5, 5} | {"hello": 5, "world": 5} | ✗ |
+| 4 | len() of filtered enumerate dict | 3 | 3 | ✓ |
+
+**Score:** 2/4
+
+### Key Corrections
+- Q1: Dict key access returns the value only, not key: value
+- Q3: Dict keys are the words, values are the lengths — two entries, not one
+
+### Key Insight
+- Comprehension variables are defined by the `for` clause — write that first, then build expression and filter around it
+- Variable names are arbitrary — position in unpacking determines what data they hold
+
+---
+
 ## Week 1, Day 2
 **Date:** February 23, 2026
 **Topic:** List Comprehensions
