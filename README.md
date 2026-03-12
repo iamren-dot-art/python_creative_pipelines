@@ -4,6 +4,38 @@
 **Started:** February 2026
 **Curriculum:** v1.1
 
+## Week 1, Day 4
+**Date:** March 8, 2026
+**Topic:** Nested Data Structures
+
+### Summary
+- Chaining bracket access for nested dicts: data["a"]["b"]["c"]
+- Lists inside dicts: data["objects"][0]["name"]
+- Safe nested access with .get() and empty dict defaults
+- Comprehensions over nested structures
+- Nested comprehensions for flattening
+
+### Exercises Completed
+1. `exercise_01_nested_access.py` — Deep access into C4D project config
+2. `exercise_02_nested_comprehensions.py` — Comprehensions over nested scene data
+
+### Quiz
+
+| Q# | Question | My Answer | Correct Answer | Result |
+|----|----------|-----------|----------------|--------|
+| 1 | Nested dict access | {80} | 80 | ✗ |
+| 2 | List in dict indexing | b | b | ✓ |
+| 3 | Chained .get() with missing key | {arnold aac} | aac | ✗ |
+| 4 | sum() over nested data | 35 | 35 | ✓ |
+
+**Score:** 2/4
+
+### Key Corrections
+- Q1: Bare values print without any brackets or braces
+- Q3: .get() short-circuits — if first key is missing, default kicks in and the chain never reaches the original data
+
+---
+
 ## Week 1, Day 3
 **Date:** February 24, 2026
 **Topic:** Dict Comprehensions
